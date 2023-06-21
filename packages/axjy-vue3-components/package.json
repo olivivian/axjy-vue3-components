@@ -1,0 +1,26 @@
+{
+  "name": "axjy-vue3-components",
+  "version": "0.0.0",
+  "description": "基于vue3的业务组件库",
+  "author": "Axjy <frightingtime@163.com>",
+  "homepage": "https://github.com/olivivian/axjy-vue3-components#readme",
+  "license": "ISC",
+  "main": "lib/axjy-vue3-components.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivivian/axjy-vue3-components.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/axjy-vue3-components.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/olivivian/axjy-vue3-components/issues"
+  }
+}
