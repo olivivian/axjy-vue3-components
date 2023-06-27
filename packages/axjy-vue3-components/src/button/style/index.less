@@ -1,0 +1,18 @@
+@import 'ant-design-vue/es/button/style/index';
+
+.j-button {
+    &.ant-btn {
+        line-height: 1;
+
+        > span {
+            line-height: 0;
+            vertical-align: middle;
+        }
+
+        .vp-icon-svg {
+            + span {
+                margin-left: 8px;
+            }
+        }
+    }
+}

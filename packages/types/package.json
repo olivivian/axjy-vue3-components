@@ -1,0 +1,19 @@
+{
+  "name": "@axjy-vue3-components/types",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Axjy <frightingtime@163.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/olivivian/axjy-vue3-components#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivivian/axjy-vue3-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olivivian/axjy-vue3-components/issues"
+  },
+  "main": "index.ts",
+  "files": [
+    "lib"
+  ]
+}

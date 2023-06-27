@@ -1,34 +1,32 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Button, IconFont, SelectIcon } from 'axjy-vue3-components'
+import 'axjy-vue3-components/src/button/style/index.less'
+import 'axjy-vue3-components/src/select-icon/style/index.less'
+import icons from '../assets/icons.json'
 
-defineProps<{ msg: string }>()
+const selectedIcon = ref('')
+function onSelectIcon(value: string) {
+  selectedIcon.value = value
+}
 
-const count = ref(0)
+console.log('接收到的图标', icons)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+  <div style="display: none;">
+    <Button type="dashed">
+      原版按钮
+      <template #icon>
+        <IconFont icon="icon-xiangqing2" :size="20" />
+      </template>
+    </Button>
+    <Button type="primary" danger ico="icon-xiangqing2">
+      新版按钮
+    </Button>
   </div>
 
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <SelectIcon :icons="icons" :value="selectedIcon" @select="onSelectIcon" />
 </template>
 
 <style scoped>

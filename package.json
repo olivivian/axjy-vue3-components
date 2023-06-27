@@ -1,10 +1,26 @@
 {
   "name": "root",
+  "type": "module",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "playground:dev": "lerna run --scope playground dev",
+    "cleanDirs": "gulp cleanUtils",
+    "buildUtils": "gulp buildUtils"
+  },
   "devDependencies": {
-    "lerna": "^7.0.2"
+    "@antfu/eslint-config": "^0.39.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/register": "^7.22.5",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "fast-glob": "^3.2.12",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "lerna": "^7.0.2",
+    "rollup": "^3.25.2",
+    "rollup-plugin-dts": "^5.3.0"
   }
 }
