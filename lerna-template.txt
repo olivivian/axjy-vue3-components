@@ -8,5 +8,12 @@
       {{/if}}
     {{/each}}
   ],
-  "version": "independent"
+  "version": "independent",
+   "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish %s",
+      "registry": "https://registry.npmjs.org"
+    }
+  }
 }

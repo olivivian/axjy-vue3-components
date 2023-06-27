@@ -1,9 +1,19 @@
 // scripts/publish.js
-const globby = require('globby')
-const inquirer = require('inquirer')
-const fs = require('fs-extra')
-const handlebars = require('handlebars')
-const execa = require('execa')
+// const globby = require('globby')
+// const inquirer = require('inquirer')
+// const fs = require('fs-extra')
+// const handlebars = require('handlebars')
+// const execa = require('execa')
+import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import globby from 'globby'
+import inquirer from 'inquirer'
+import fs from 'fs-extra'
+import handlebars from 'handlebars'
+import execa from 'execa'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const cwd = process.cwd()
 
