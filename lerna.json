@@ -1,7 +1,9 @@
 {
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "packages": [
+    "packages/utils"
+  ],
   "version": "independent",
-  "command": {
+   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
       "message": "chore(release): publish %s",
