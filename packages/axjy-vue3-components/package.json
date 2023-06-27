@@ -1,6 +1,6 @@
 {
   "name": "axjy-vue3-components",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "基于vue3的业务组件库",
   "author": "Axjy <frightingtime@163.com>",
   "license": "ISC",
@@ -27,12 +27,12 @@
     "test": "__tests__"
   },
   "dependencies": {
-    "@axjy-vue3-components/utils": "^0.0.0",
+    "@axjy-vue3-components/utils": "^0.1.0",
     "ant-design-vue": "^3.2.20",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "@axjy-vue3-components/types": "^0.0.0",
+    "@axjy-vue3-components/types": "^0.1.0",
     "@types/lodash-es": "^4.17.7"
   }
 }
