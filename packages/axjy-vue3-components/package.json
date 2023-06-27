@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "基于vue3的业务组件库",
   "author": "Axjy <frightingtime@163.com>",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/olivivian/axjy-vue3-components#readme",
   "repository": {
     "type": "git",
@@ -13,9 +13,16 @@
     "url": "https://github.com/olivivian/axjy-vue3-components/issues"
   },
   "main": "index.ts",
+  "types": "index.ts",
   "files": [
-    "lib"
+    "dist",
+    "lib",
+    "es",
+    "src"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
